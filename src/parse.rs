@@ -100,6 +100,8 @@ pub enum Tag<'a> {
     Emphasis,
     Strong,
     Code,
+
+    /// Link(destination, text)
     Link(Cow<'a, str>, Cow<'a, str>),
     Image(Cow<'a, str>, Cow<'a, str>),
 }
